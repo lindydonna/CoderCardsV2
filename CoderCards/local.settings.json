@@ -11,7 +11,8 @@
     "HOME": ".",
     "SITE_PATH": ".",
     "SITEURL": "localhost:7071",
-    "PROXYURL": "<ADD YOUR REMOTE SITE WITH PROXY HERE>"
+    "STORAGE_URL": "https://donnamblobstorage.blob.core.windows.net",
+    "CONTAINER_SAS": "?st=2017-05-16T18%3A33%3A00Z&se=2018-05-18T18%3A33%3A00Z&sp=rwl&sv=2015-12-11&sr=c&sig=EHFkZqf%2FeW2VJhdBmJnJ2wIjMl1oOvU%2Fx%2FvZwEYyFQE%3D"
   },
   "ConnectionStrings": {}
 }
