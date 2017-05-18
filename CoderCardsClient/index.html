@@ -216,7 +216,7 @@
                         // This shouldn't be used since we cancel all uploads 
                         // via Dropzone and hijack them for our own upload
                         // since Dropzone uses multi-part uploads :(
-                        return `${STORAGE_URL}/${INPUTCONTAINERNAME}/${files[0].name}${CONTAINER_SAS}`;
+                        return `${STORAGE_URL}${INPUTCONTAINERNAME}/${files[0].name}${CONTAINER_SAS}`;
                     },
                     headers: {
                         "x-ms-blob-type": "BlockBlob",
@@ -287,7 +287,7 @@
                 const title = prompt("What's their title?");
                 const name = generateUUID() + '.jpg'
                 const xhr = new XMLHttpRequest();
-                xhr.open("PUT", `${STORAGE_URL}/${INPUTCONTAINERNAME}/${name}${CONTAINER_SAS}`);
+                xhr.open("PUT", `${STORAGE_URL}${INPUTCONTAINERNAME}/${name}${CONTAINER_SAS}`);
                 xhr.setRequestHeader('x-ms-blob-type', 'BlockBlob');
                 xhr.setRequestHeader('Content-Type', 'image/jpeg');
                 xhr.send(file);
@@ -321,7 +321,7 @@
 
             function getImage(name, imageId, cb) {
                 const xhr = new XMLHttpRequest();
-                const imageUrl = `${STORAGE_URL}/${OUTPUTCONTAINERNAME}/${name}`;
+                const imageUrl = `${STORAGE_URL}${OUTPUTCONTAINERNAME}/${name}`;
                 xhr.open("GET", imageUrl);
                 xhr.responseType = "blob";
                 xhr.onload = (e) => {
