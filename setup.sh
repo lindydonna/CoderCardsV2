@@ -34,5 +34,4 @@ sed -i 's,"CONTAINER_SAS": "","CONTAINER_SAS": "?'${sasToken//&/\\&}'",g' CoderC
 az storage container set-permission --connection-string $connstr --public-access blob -n output-local
 
 # set CORS on blobs
-# this command does not currently work!
-# az storage cors add --connection-string $connstr --origins '*' --methods GET --allowed-headers '*' --exposed-headers '*' --max-age 200 --services blob
+az storage cors add --connection-string $connstr --origins '*' --methods GET PUT OPTIONS --allowed-headers '*' --exposed-headers '*' --max-age 200 --services b
