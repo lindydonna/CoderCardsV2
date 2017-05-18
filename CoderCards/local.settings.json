@@ -1,8 +1,8 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsDashboard": "<ADD YOUR STORAGE SETTING HERE>",
-    "AzureWebJobsStorage": "<ADD YOUR STORAGE SETTING HERE>",
+    "AzureWebJobsDashboard": "",
+    "AzureWebJobsStorage": "",
     "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
     "EmotionAPIKey": "b9ce92b6cb344dcca22d8139eb562064",
     "input-container": "input-local",
@@ -11,8 +11,8 @@
     "HOME": ".",
     "SITE_PATH": ".",
     "SITEURL": "localhost:7071",
-    "STORAGE_URL": "https://donnamblobstorage.blob.core.windows.net",
-    "CONTAINER_SAS": "?st=2017-05-16T18%3A33%3A00Z&se=2018-05-18T18%3A33%3A00Z&sp=rwl&sv=2015-12-11&sr=c&sig=EHFkZqf%2FeW2VJhdBmJnJ2wIjMl1oOvU%2Fx%2FvZwEYyFQE%3D"
+    "STORAGE_URL": "",
+    "CONTAINER_SAS": ""
   },
   "ConnectionStrings": {}
 }
