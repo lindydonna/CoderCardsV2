@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appName": {
-      "value": "donnam-codercards"
+      "value": "codercards"
     },
     "repoUrl": {
-      "value": "https://github.com/lindydonna/CoderCardsV2"
+      "value": "https://github.com/Azure-Samples/functions-dotnet-codercards"
     }
   }
 }
